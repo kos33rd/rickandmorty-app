@@ -3,23 +3,19 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
-const buildStubServer = require('./stub/server')
+const buildStubServer = require('./stub/server');
 
 const outputDirectory = path.join(__dirname, 'dist');
 
-const port = process.env.PORT || 9000
-
-function srcPath(subdir) {
-    return path.join(__dirname, "src", subdir);
-}
+const port = process.env.PORT || 9000;
 
 module.exports = {
     mode: "development",
     entry: {
-        app: ["./src/index.js"]
+        app: "./src/index.js"
     },
     output: {
-        path: path.join(__dirname, outputDirectory),
+        path: outputDirectory,
         publicPath: '/',
         filename: "[name].js"
     },
@@ -35,7 +31,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    { loader: "style-loader" },
+                    {
+                        loader: "style-loader"
+                    },
                     {
                         loader: "css-loader",
                         options: {
