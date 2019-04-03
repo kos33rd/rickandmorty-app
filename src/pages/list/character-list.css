@@ -1,0 +1,8 @@
+.title {
+  transform-origin: 0 0 0;
+  transform: translate(80%, -25px) rotate(20deg);
+}
+
+.body {
+  overflow: hidden;
+}

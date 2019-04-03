@@ -1,0 +1,14 @@
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+}
+
+.search {
+  width: 240px;
+  padding-left: 8px;
+}
