@@ -1,12 +1,12 @@
 {
-  "name": "my-app",
+  "name": "rickandmorty-app",
   "version": "0.1.0",
-  "description": "first app",
+  "description": "simple webpack-driven app",
   "main": "src/index.js",
   "scripts": {
-    "dev:stub": "cross-env PORT=1234 BACKEND_URL=/ npm run dev",
-    "dev:api": "cross-env PORT=1235 BACKEND_URL=https://rickandmortyapi.com/ npm run dev",
-    "dev": "webpack-dev-server",
+    "dev:stub": "cross-env PORT=1234 BACKEND_URL=/ npm start",
+    "dev:api": "cross-env PORT=1235 BACKEND_URL=https://rickandmortyapi.com/ npm start",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "lint": "eslint 'src/**/*.js'",
     "stylelint": "stylelint 'src/**/*.css' --fix",

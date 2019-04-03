@@ -42,7 +42,7 @@ export class CharacterDetails extends React.Component {
 
         return (
             <Grid container justify="center" alignItems="center">
-                <Grid item xs={12} md={6} lg={4} justify="center">
+                <Grid item xs={12} md={6} lg={4}>
                     <Card className={styles.card}>
                         <CardMedia
                             className={styles.media}

@@ -5,7 +5,7 @@ import { CharacterCard } from "./character-card"
 
 import style from './character-list.css'
 import { connect } from "react-redux"
-import { loadCharactersActionCreator } from "../../redux/actionCreators/loadCharacters"
+import { loadCharactersActionCreator } from "../../redux/action-creators/load-characters"
 
 
 class CharactersList extends React.Component {
